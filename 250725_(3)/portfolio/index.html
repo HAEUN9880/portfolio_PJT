@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장하은 - 자바 풀스택 개발자</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 1. 네비게이션 바 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- 로고 -->
+             <div class="nav-logo">
+                <span onclick="">👩‍💻</span>
+                <span>장하은</span>
+             </div>
+             <div>
+                <ul class="nav-menu" id="nav-menu">
+                    <!-- 앵커 링크 : SPA처럼 페이지 내 섹션 이동 -->
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">소개</a></li>
+                    <li><a href="#skills">기술</a></li>
+                    <li><a href="#projects">프로젝트</a></li>
+                    <li><a href="#contact">연락처</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">☰</div>
+             </div>
+        </div>
+    </nav>
+
+    <!-- 2. 메인 화면 -->
+    <section class="hero-main" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">안녕하세요! 저는 <span class="highlight">장하은</span>입니다.</h1>
+                    <p class="hero-subtitle">Java Full-Stack Developer</p>
+                    <p class="hero-description">
+                        사용자 경험을 중시하는 자바 풀스택 개발자입니다.
+                        새로운 기술을 배우는 것을 좋아하며, 클린하고 효율적인 코드를 작성하기 위해 노력합니다.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">프로젝트 보기</button>
+                        <a href="assets/resume.docx" download class="btn-secondary">이력서 다운로드</a>
+                    </div>
+                    <div class="social-links">
+                        <button class="social-btn github" onclick="window.open('https://github.com/HAEUN9880/portfolio_PJT')">🌘</button>
+                        <button class="social-btn linkedin" onclick="window.open('https://www.linkedin.com/in/%ED%95%98%EC%9D%80-%EC%9E%A5-ab5b87296/')">🔗</button>
+                        <button class="social-btn email" onclick="location.href='mailto:hn03238@naver.com?subject=포트폴리오 문의&body=안녕하세요 하은님, 포트폴리오 잘 봤습니다!'">📧</button>
+                        <button class="social-btn portfolio" onclick="">🌐</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image" onclick="">
+                        <img src="image/ID_photo_blue.jpg" alt="소개 사진" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 소개 섹션 -->
+    <section class="about" id="about">
+        <div class="background" id="background-about">
+            <div class="about-container">
+                <h1 id="about-h1">Full-Stack Developer</h1>
+                <div class="rotator" id="rotator">
+                    <div class = java>
+                        <div class="card front">
+                            <h2 class="about-h2" id="h2-java">Java 초급 개발자</h2>
+                            <ul>
+                                <li>✓ Java 문법에 대한 기본기</li>
+                                <li>✓ 클래스와 객체에 대한 이해</li>
+                                <li>✓ 기초 자료구조 활용 능력</li>
+                                <li>✓ 기능별 메서드 분리 및 코드 구조화</li>
+                                <li>✓ 콘솔 기반 사용자 입출력 및 디버깅 경험</li>
+                            </ul>
+                        </div>
+                        <div class="tech-text">
+                            <h1>교육에 임하면서...</h1>
+                            <p>
+                                Java에 대한 기본적인 문법과 객체지향 개념을 기반으로 다양한 기능을 구현해왔습니다.<br>
+                                기초 알고리즘과 자료구조에 대한 이해를 바탕으로 효율적인 코드 작성에 집중했으며,<br>
+                                기능별로 코드를 구조화하고, 디버깅을 통해 문제를 해결하는 능력을 길렀습니다.<br>
+                                특히 사용자 입력 및 예외 상황을 고려한 실용적인 코드 설계에 집중해왔습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class = sap>
+                        <div class="card back">
+                            <h2 class="about-h2" id="h2-sap">SAP 컨설턴트</h2>
+                            <ul>
+                                <li>✓ 개발을 이해하고 설계 구상이 가능한 컨설턴트</li>
+                                <li>✓ SAP System 운영 및 관리</li>
+                                <li>✓ ABAP 및 Fiori 개발, SAP Public Cloud 프로젝트 경험자</li>
+                                <li>✓ SAP 연동시스템 I/F 개발 및 유지보수</li>
+                                <li>✓ IT감사 대응 가능</li>
+                            </ul>
+                        </div>
+                        <div class="tech-text">
+                            <h1>경험 중심의...</h1>
+                            <p>
+                                SAP 시스템의 구조와 모듈별 흐름을 이해하고 있으며,<br>
+                                FIORI, ABAP, SAP Public Cloud 등 다양한 환경에서의 개발 및 유지보수 경험이 있습니다.<br>
+                                특히 SAP 인터페이스(RFC, oData)와 사용자 정의 기능(BAPI, BADI, User Exit 등)을 활용한<br>
+                                프로세스 자동화 및 커스터마이징을 수행해왔습니다.<br>
+                                또한, ITGC/ITAC 등 감사 대응 경험을 통해 시스템 안정성과 보안을 고려한 설계를 중요하게 생각합니다.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <button onclick="rotate()" id="rotate-btn">⟳</button>
+            </div>
+        </div>    
+    </section>
+
+    <!-- 4. 스킬 섹션 -->
+    <section id="skills" class="skills">
+        <!-- <div class="background"> -->
+            <div class="container">
+                <h1 id="skill-h1">주요 사용 기술</h1>
+                <div class="tech-container">
+                    <div class="tech-group">
+                        <h2 class="skills-subject" id="h2-java">Java</h2>
+                        <div class="tech-column" id="column1"></div>
+                    </div>
+                    <div class="tech-group">
+                        <h2 class="skills-subject" id="h2-sap">SAP</h2>
+                        <div class="tech-column" id="column2"></div>
+                    </div>
+                </div>
+
+                <!-- 모달 구조 -->
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal()">&times;</span>
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-desc"></p>
+                    </div>
+                </div>
+            </div>
+        <!-- </div>     -->
+    </section>
+
+    <!-- 5. 프로젝트 섹션 -->
+    <section id="projects" class="projects">
+        <div>
+            <h1 id="projects-subject">프로젝트</h1>
+            <div class="projects-container">
+
+                <!-- 첫번째 프로젝트 카드 -->
+                <div class="project-card" onclick="goToDetail('card1_hyosung.html')">
+                    <!-- 프로젝트 이미지 영역(텍스트로 표현) -->
+                    <div class="project-card-image">효성중공업 차세대 시스템 구축 PJT.</div>
+                    <!-- 프로젝트 정보 영역 -->
+                    <div class="project-card-content">
+                        <!-- 프로젝트명 -->
+                        <h3 class="project-card-title">SAP 구축 개발자</h3>
+                        <!-- 프로젝트 설명 -->
+                        <p class="project-card-description">2020.12.21~2021.10.05</p>
+                    </div>
+                </div>
+
+                <!-- 두번째 프로젝트 카드 -->
+                <div class="project-card" onclick="goToDetail('card2_ASK.html')">
+                    <!-- 프로젝트 이미지 영역(텍스트로 표현) -->
+                    <div class="project-card-image">리만코리아(ASK Company) Public Cloud 구축 PJT.</div>
+                    <!-- 프로젝트 정보 영역 -->
+                    <div class="project-card-content">
+                        <!-- 프로젝트명 -->
+                        <h3 class="project-card-title">SAP Public Cloud 구축 개발자</h3>
+                        <!-- 프로젝트 설명 -->
+                        <p class="project-card-description">2023.04.17~2023.10.31</p>
+                    </div>
+                </div>  
+
+                <!-- 세번째 프로젝트 카드 -->
+                <div class="project-card" onclick="goToDetail('card3_Ceragem.html')">
+                    <!-- 프로젝트 이미지 영역(텍스트로 표현) -->
+                    <div class="project-card-image">세라젬 BRIM 구축 PJT.</div>
+                    <!-- 프로젝트 정보 영역 -->
+                    <div class="project-card-content">
+                        <!-- 프로젝트명 -->
+                        <h3 class="project-card-title">SAP BRIM 구축 컨설턴트</h3>
+                        <!-- 프로젝트 설명 -->
+                        <p class="project-card-description">2023.11.01~2024.05.31</p>
+                    </div>
+                </div>
+
+                <!-- 네번째 프로젝트 카드 -->
+                <div class="project-card" onclick="goToDetail('card4_ITaudit.html')">
+                    <!-- 프로젝트 이미지 영역(텍스트로 표현) -->
+                    <div class="project-card-image">IT감사</div>
+                    <!-- 프로젝트 정보 영역 -->
+                    <div class="project-card-content">
+                        <!-- 프로젝트명 -->
+                        <h3 class="project-card-title">IT 감사인</h3>
+                        <!-- 프로젝트 설명 -->
+                        <p class="project-card-description">2024.06.01~2025.01.15</p>
+                    </div>
+                </div> 
+
+                <!-- 다섯번째 프로젝트 카드 -->
+                <div class="project-card" onclick="goToDetail('card5_Portfolio.html')">
+                    <!-- 프로젝트 이미지 영역(텍스트로 표현) -->
+                    <div class="project-card-image">포트폴리오 웹사이트 제작 PJT.</div>
+                    <!-- 프로젝트 정보 영역 -->
+                    <div class="project-card-content">
+                        <!-- 프로젝트명 -->
+                        <h3 class="project-card-title">프론트엔드 개발자</h3>
+                        <!-- 프로젝트 설명 -->
+                        <p class="project-card-description">2025.06.30~2025.07.25</p>
+                    </div>
+                </div> 
+
+                <!-- 여섯번째 프로젝트카드 -->
+                <div class="project-card" onclick="goToDetail('card6_Web.html')">
+                    <!-- 프로젝트 이미지 영역(텍스트로 표현) -->
+                    <div class="project-card-image">팀 자유주제 웹사이트 제작 PJT.</div>
+                    <!-- 프로젝트 정보 영역 -->
+                    <div class="project-card-content">
+                        <!-- 프로젝트명 -->
+                        <h3 class="project-card-title">개발자</h3>
+                        <!-- 프로젝트 설명 -->
+                        <p class="project-card-description">2025.11 예정</p>
+                    </div>
+                </div> 
+
+                <!-- 일곱번째 프로젝트카드 -->
+                <div class="project-card" onclick="goToDetail('card7_Web.html')">
+                    <!-- 프로젝트 이미지 영역(텍스트로 표현) -->
+                    <div class="project-card-image">회사 지정 주제 웹사이트 제작 PJT.</div>
+                    <!-- 프로젝트 정보 영역 -->
+                    <div class="project-card-content">
+                        <!-- 프로젝트명 -->
+                        <h3 class="project-card-title">개발자</h3>
+                        <!-- 프로젝트 설명 -->
+                        <p class="project-card-description">2025.11 예정</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. 연락처 -->
+    <section id="contact" class="contact">
+        <div>
+            <h1 id="form-subject">메시지 전달</h1>
+            <div class="form-container">   
+                <form id="contactForm">
+                <label for="name" class="form-label">보내시는 분</label>
+                <input type="text" id="name" name="name" class="form-input" required >
+
+                <label for="email">이메일</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+
+                <label for="message">전하고 싶은 말</label>
+                <textarea id="message" name="message" class="form-textarea" required></textarea>
+
+                <button type="submit" class="form-send-btn">보내기</button>
+                </form>
+                <p id="result"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 장하은. 모든 권리 보유.</p>
+            <div class="footer-social">
+                <button onclick="">Github</button>
+                <button onclick="">LinkedIn</button>
+                <button onclick="">Email</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
