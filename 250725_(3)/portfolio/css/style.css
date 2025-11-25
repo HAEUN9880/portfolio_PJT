@@ -617,10 +617,18 @@ img:hover {
 #h2-java {
     color: #F2D7D9;
 }
+#skills-java {
+    color: #F2D7D9;
+}
 
 #h2-sap {
     color: #9CB4CC;
 }
+
+#skills-sap {
+    color: #9CB4CC;
+}
+
 
 .tech-column {
     display: flex;
